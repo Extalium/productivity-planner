@@ -3,7 +3,7 @@ name: Webapp build
 on:
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.12]
+        node-version: [22.14]
 
     steps:
       # Vérification du dépôt
